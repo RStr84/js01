@@ -9,15 +9,29 @@
         function add(number1, number2) {
             return number1 + number2;
         }
+
+        // function expression
+        const sub = function(number1, number2) {
+          return number1 - number2;
+        }
     </script>
 
 </head>
 <body>
 
-<h2>FunctionExpression</h2>
+<h2>FunctionDeclaration</h2>
 <p id="sum"></p>
+
 <script>
     document.querySelector('#sum').innerHTML = add(3, 4);
+</script>
+
+
+<h2>FunctionExpression</h2>
+<p id="diff"></p>
+
+<script>
+  document.querySelector('#diff').innerHTML = sub(93, 18);
 </script>
 
 </body>
