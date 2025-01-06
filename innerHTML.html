@@ -28,7 +28,11 @@ Aufgabe 02
 -->
 <h2>Aufgabe 02</h2>
 <p id="demo01">123</p>
-<button type="button" onclick='double()'>Verdopple mich!</button>
+
+<!--
+onclick variieren mit doubleId oder doubleDouble
+-->
+<button type="button" onclick='doubleDouble()'>Verdopple mich!</button>
 
 <script>
 function doubleID() {
@@ -38,7 +42,7 @@ function doubleID() {
 </script>
 
 <script>
-    function double() {
+    function doubleDouble() {
         let zahl = document.querySelector('#demo01');
         zahl.innerHTML = zahl.innerHTML + zahl.innerHTML;
     }
