@@ -31,10 +31,17 @@ Aufgabe 02
 <button type="button" onclick='double()'>Verdopple mich!</button>
 
 <script>
-function double() {
+function doubleID() {
     let zahl = document.querySelector('#demo01');
-        zahl.innerHTML += zahl.innerHTML;
+        zahl.innerHTML += 123;
 }
+</script>
+
+<script>
+    function double() {
+        let zahl = document.querySelector('#demo01');
+        zahl.innerHTML = zahl.innerHTML + zahl.innerHTML;
+    }
 </script>
 
 </body>
