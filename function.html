@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+    function myFunction(textOutput) {
+        // Popup
+        alert(textOutput);
+
+        // Konsolenausgabe (Browser untersuchen → Console)
+        console.log(textOutput);
+
+        document.querySelector("#demo").innerHTML = textOutput;
+    }
+</script>
+<body>
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction('ding dong')">Try it</button>
+
+</body>
+</html>

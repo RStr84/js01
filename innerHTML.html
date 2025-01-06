@@ -15,19 +15,26 @@ Aufgabe 01: Erstelle einen Paragraph ohne Inhalt und einen Knopf. Beim Klicken a
 Aufgabe 02: Erstelle einen Paragraph mit Inhalt "123" und einen Knopf. Beim Klicken auf den Knopf soll im Paragraph der Inhalt jeweils verdoppelt werden!
 -->
 
+<!--
+Aufgabe 01
+-->
 <h2>Aufgabe 01</h2>
 <p id="demo00"></p>
 <button type="button" onclick='document.querySelector("#demo00").innerHTML = "Hello Welt!"'>Drücke mich!</button>
 
+
+<!--
+Aufgabe 02
+-->
 <h2>Aufgabe 02</h2>
 <p id="demo01">123</p>
 <button type="button" onclick='double()'>Verdopple mich!</button>
 
 <script>
-    function double() {
-        const paragraph = document.querySelector('demo01');
-        paragraph.innerText = paragraph.innerText.repeat(2);
-    }
+function double() {
+    let zahl = document.querySelector('#demo01');
+        zahl.innerHTML += zahl.innerHTML;
+}
 </script>
 
 </body>
