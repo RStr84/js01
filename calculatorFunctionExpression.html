@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        // Aufgabe: Erstelle einen Rechner, der 2 vorgegebene Zahlen mit 5 Rechenarten versieht
+        // dazu sollen 5 function expression erstellt werden
+
+        const addiere = function(number1, number2) {
+            return number1 + number2;
+        }
+
+        const subtrahiere = function(number1, number2) {
+            return number1 - number2;
+        }
+
+        const multipliziere = function(number1, number2) {
+            return number1 * number2;
+        }
+
+        const dividiere = function(number1, number2) {
+            return number1 / number2;
+        }
+
+        const modulo = function(number1, number2) {
+            return number1 % number2;
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+
+<h2>Addiere</h2>
+<p id="add"></p>
+
+<h2>Subtrahiere</h2>
+<p id="sub"></p>
+
+<h2>Multipliziere</h2>
+<p id="mul"></p>
+
+<h2>Dividiere</h2>
+<p id="div"></p>
+
+<h2>Modulo</h2>
+<p id="modulo"></p>
+
+<script>
+
+    document.querySelector('#add').innerHTML = addiere(3, 6);
+    document.querySelector('#sub').innerHTML = subtrahiere(3, 6);
+    document.querySelector('#mul').innerHTML = multipliziere(3, 6);
+    document.querySelector('#div').innerHTML = dividiere(3, 6);
+    document.querySelector('#modulo').innerHTML = modulo(3, 7);
+
+</script>
+
+</body>
+</html>
