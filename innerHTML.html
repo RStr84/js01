@@ -15,14 +15,6 @@ Aufgabe 01: Erstelle einen Paragraph ohne Inhalt und einen Knopf. Beim Klicken a
 Aufgabe 02: Erstelle einen Paragraph mit Inhalt "123" und einen Knopf. Beim Klicken auf den Knopf soll im Paragraph der Inhalt jeweils verdoppelt werden!
 -->
 
-<!--
-Aufgabe 03: Erstelle einen Paragraph mit Inhalt "123" und einen Knopf. Beim Klicken auf den Knopf soll im Paragraph der Inhalt jeweils verdoppelt werden!
--->
-
-<!--
-Zwischen Anfangs- und End-tag funktioniert der Zugriff über 'innerHTML'.value-Felder wie <input type="text" value=... funktioniert der Zugriff über "value"
--->
-
 <h2>Aufgabe 01</h2>
 <p id="demo00"></p>
 <button type="button" onclick='document.querySelector("#demo00").innerHTML = "Hello Welt!"'>Drücke mich!</button>
@@ -37,11 +29,6 @@ Zwischen Anfangs- und End-tag funktioniert der Zugriff über 'innerHTML'.value-F
         paragraph.innerText = paragraph.innerText.repeat(2);
     }
 </script>
-
-<h2>Aufgabe 03</h2>
-<input id="in1" type="text" value="">
-<br>
-<button type="button" onclick='document.querySelector("#in1").value = "4711"'>Drücke mich!</button>
 
 </body>
 </html>
