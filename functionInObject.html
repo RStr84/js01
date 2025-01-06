@@ -10,14 +10,19 @@
             lastname: 'Pan',
             age: 50,
             objectDetails: function () {
-
+                return this.firstname + ' ' + this.lastname + ' ist ' + this.age + ' Jahre alt!';
             }
         }
     </script>
+
 </head>
 <body>
 
-
+<h2>FunctionInObject</h2>
+<p id="person"></p>
+<script>
+    document.querySelector('#person').innerHTML = peter.objectDetails();
+</script>
 
 </body>
 </html>
