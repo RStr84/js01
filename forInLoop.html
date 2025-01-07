@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an Object
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            gender: "male"
+        };
+
+        // Punktnotation, .name .age .city kann ich nicht durch Variablen erzeugen
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person.city);
+        console.log(person.gender);
+
+        // bei der Notation mit eckigen Klammern kann ich die Attribute durch Variablen (x) erzeugen
+        // x durchlaüft alle Attribute
+
+        // Build a Text
+        let text = "";
+        for (let x in person) {
+            // Attribute können durch Punktnotation oder durch [<attributname>] ausgelesen werden
+            text += person[x] + " ";
+            // hier kann let x ausgelesen werden
+            console.log(x)
+        }
+
+        // Display the Text
+        document.getElementById("demo").innerHTML = text;
+
+        // hier kann let x nicht ausgelesen werden
+        // außerhalb der {} habe ich keinen Zugriff auf x, also erscheint eine Fehlermeldung in console.log
+        console.log(x);
+
+    </script>
+
+</head>
+<body>
+
+<script>
+
+</script>
+
+</body>
+</html>
